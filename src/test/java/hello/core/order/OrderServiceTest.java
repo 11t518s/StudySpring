@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
-    MemberService memberService = AppConfig.memberService();
-    OrderService orderService = AppConfig.orderService();
+    MemberService memberService = new AppConfig().memberService();
+    OrderService orderService = new AppConfig().orderService();
 
     @Test
     void createOrder() {
